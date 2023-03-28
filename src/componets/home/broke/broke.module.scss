@@ -1,0 +1,41 @@
+.broke {
+  .head {
+    @apply flex justify-center flex-col items-center;
+    .bg {
+      @apply w-full absolute -z-50 opacity-[0.88] object-cover h-full;
+    }
+    .logo {
+      @apply md:my-10 md:w-60 w-20;
+    }
+    h1 {
+      @apply md:text-7xl text-2xl md:mb-6 text-white;
+    }
+  }
+  form {
+    @apply bg-gray flex flex-col justify-center items-center;
+    .top_inputs,
+    .bottom_inputs {
+      @apply flex md:flex-row flex-col justify-between lg:w-1/2 md:w-11/12 md:mt-7;
+      input {
+        @apply md:h-12 bg-inherit outline-none my-2 md:my-0 text-white text-xl md:border md:border-white
+        border-b border-brown;
+        &::placeholder {
+          @apply text-xl text-white/70 pl-2;
+        }
+      }
+    }
+    .top_inputs {
+      input {
+        @apply md:w-5/12;
+      }
+    }
+    .bottom_inputs {
+      input {
+        @apply md:w-1/4;
+      }
+    }
+    .button {
+      @apply bg-lightBrown md:p-5 p-2 my-4 md:my-8 md:w-60 text-lg w-40 text-center md:text-2xl;
+    }
+  }
+}

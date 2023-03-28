@@ -1,0 +1,39 @@
+.header {
+  @apply border-b-2 border-dashed border-brown bg-gray;
+  .nav {
+    img {
+      @apply w-40;
+    }
+    @apply hidden w-full items-center justify-around md:flex;
+    li {
+      @apply text-center text-xl text-white;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .mobile_header {
+    @apply flex w-11/12 items-center justify-between md:hidden;
+    img {
+      @apply w-1/4;
+    }
+    .burger {
+      @apply flex h-5 flex-col items-center justify-between;
+      span {
+        @apply h-[2px] w-10 bg-white;
+      }
+    }
+  }
+  .mobile_nav {
+    @apply h-screen text-center text-3xl text-white;
+    li {
+      @apply m-2;
+    }
+  }
+  .active {
+    @apply block border-t-2 border-dashed border-brown;
+  }
+  .hid {
+    @apply hidden;
+  }
+}

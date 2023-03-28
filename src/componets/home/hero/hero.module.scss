@@ -1,0 +1,16 @@
+.hero {
+  @apply bg-gray md:flex;
+  .main {
+    @apply flex flex-col items-center justify-center gap-10 text-white md:w-1/2 md:px-10;
+    h1 {
+      @apply px-4 text-center text-3xl md:px-0 md:text-5xl;
+    }
+    p {
+      @apply px-4 pb-2 text-justify text-xl md:px-0 md:pb-0;
+    }
+  }
+
+  .img {
+    @apply object-cover md:w-1/2;
+  }
+}
