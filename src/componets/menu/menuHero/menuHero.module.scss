@@ -1,0 +1,22 @@
+.new_menu {
+  @apply bg-brown p-3;
+  .swiper {
+    @apply h-[27rem];
+    .swiper_slide {
+      @apply flex h-[25rem] flex-col items-center justify-between rounded-2xl;
+      background-color: rgb(230, 197, 128);
+      img {
+        @apply h-60 w-full rounded-t-2xl object-cover;
+      }
+      h3 {
+        @apply px-2 text-center text-xl;
+      }
+      p {
+        @apply p-2 text-justify;
+      }
+      .cost {
+        @apply py-2;
+      }
+    }
+  }
+}

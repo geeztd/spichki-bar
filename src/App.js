@@ -1,21 +1,13 @@
-import Header from "./componets/header/Header";
-import Hero from "./componets/home/hero/Hero";
-import History from "./componets/home/history/History";
-import Broke from "./componets/home/broke/Broke";
-import NewMenu from "./componets/home/newMenu/NewMenu";
-import Footer from "./componets/footer/Footer";
+import React from "react";
+import RouterUI from "./componets/UI/Router";
+import Layout from "./componets/layout/layout";
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <History />
-      <Broke />
-      <NewMenu />
-      <Footer />
-    </div>
-  );
-}
+export const App = () => (
+  <div className="App">
+    <Layout>
+      <RouterUI />
+    </Layout>
+  </div>
+);
 
 export default App;

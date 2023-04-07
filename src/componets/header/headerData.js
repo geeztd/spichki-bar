@@ -1,18 +1,18 @@
 export const headerData = [
-    {
-        name:`Главная`,
-        link:``,
-    },
-    {
-        name:`Меню`,
-        link:``,
-    },
-    {
-        name:`Бар`,
-        link:``,
-    },
-    {
-        name:`Акции`,
-        link:``,
-    },
-]
+  {
+    name: `Главная`,
+    link: `/`,
+  },
+  {
+    name: `Меню`,
+    link: `/Menu`,
+  },
+  {
+    name: `Бар`,
+    link: `/Bar`,
+  },
+  {
+    name: `Акции`,
+    link: `/Diskount`,
+  },
+];

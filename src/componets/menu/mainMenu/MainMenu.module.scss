@@ -1,0 +1,31 @@
+.main_menu {
+  @apply bg-brown;
+  .head {
+    @apply h-24 bg-gray text-center text-7xl text-white;
+  }
+  .body {
+    @apply grid grid-cols-2 gap-5 p-5;
+    .hotdog,
+    .burger,
+    .snacks {
+      @apply h-fit rounded-2xl border-4 border-dashed border-gray p-3;
+      .item {
+        h1 {
+          @apply p-1 text-2xl;
+        }
+        .components {
+          @apply p-1;
+        }
+        .mass {
+          @apply opacity-70;
+        }
+        div {
+          @apply flex items-center justify-between gap-7 text-justify;
+        }
+        p {
+          @apply align-top text-xl;
+        }
+      }
+    }
+  }
+}
