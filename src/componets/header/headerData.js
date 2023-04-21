@@ -13,6 +13,6 @@ export const headerData = [
   },
   {
     name: `Акции`,
-    link: `/Diskount`,
+    link: `Discounts`,
   },
 ];

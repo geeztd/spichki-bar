@@ -1,0 +1,32 @@
+.bar_hero {
+  @apply flex gap-5 bg-lightBrown pr-2;
+  .tinctures {
+    @apply flex w-1/2 md:w-3/12;
+    .headtin {
+      @apply flex w-1/4 items-center justify-center bg-[#CD5D5D] pt-[1px] text-4xl lg:text-6xl;
+      h1 {
+        @apply -rotate-90;
+      }
+    }
+    .tincture {
+      @apply flex flex-col justify-between pb-3 text-xs sm:text-[15px] lg:text-xl;
+      .cost {
+        @apply mt-1 border-y border-slate-500 text-right text-lg;
+      }
+      .item {
+        @apply pl-2;
+      }
+    }
+  }
+  .container {
+    @apply flex w-full flex-col justify-between md:w-5/12;
+    .box {
+      h2 {
+        @apply flex justify-between border-b border-slate-500 text-base sm:text-xl lg:text-2xl;
+      }
+      .item {
+        @apply flex justify-between text-sm sm:text-lg lg:text-xl;
+      }
+    }
+  }
+}

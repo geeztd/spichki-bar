@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { headerData } from "./headerData";
 import styles from "./header.module.scss";
 
@@ -12,9 +13,14 @@ const Header = () => {
           <img src="image/logo.svg" alt="logo" />
         </li>
         {headerData.map((item) => (
-          <li key={item.name}>
+          <motion.li
+            key={item.name}
+            whileHover={{
+              scale: 1.1,
+            }}
+          >
             <a href={item.link}>{item.name}</a>
-          </li>
+          </motion.li>
         ))}
       </ul>
       <div className={styles.mobile_header}>

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Aperol Spritz",
+    "cost": "220мл/9.00",
+    "struct": "Аперитиа Copper Bucket, игристое вино, содовая, апельсин"
+  },
+  {
+    "name": "Fiero Spritz",
+    "cost": "150мл/10.50",
+    "struct": "Martini Fiero, апельсин, тоник"
+  },
+  {
+    "name": "Lillet Provence Spritz",
+    "cost": "170мл/8.50",
+    "struct": "Винный напиток \"Lillet blanc\", игристое вино, сироп лаванда, лимон"
+  },
+  {
+    "name": "Lillet Summer Spritz",
+    "cost": "190мл/9.50",
+    "struct": "Винный напиток \"Lillet blanc\", сироп грейпфрут, тоник, апельсин"
+  },
+  {
+    "name": "Sangria",
+    "cost": "170мл/8.00",
+    "struct": "Вино, сахарный сироп, \"Orange Spritz\" сироп, апельсин, лайм"
+  }
+]

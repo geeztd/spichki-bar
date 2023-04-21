@@ -1,60 +1,49 @@
 import React from "react";
-import snacks from "./data/snaks.json";
-import hotdogs from "./data/hotdogs.json";
-import burgers from "./data/burger.json";
+import BurgerMenu from "./parts/BurgerMenu";
+import SnacksMenu from "./parts/SnacksMenu";
+import HotDogMenu from "./parts/HotDogMenu";
+import KesMenu from "./parts/KesMenu";
+import OtherMenu from "./parts/OtherMenu";
+import useMediaQuery from "../../../hooks/useMediaQuery";
 
 import styles from "./MainMenu.module.scss";
 
 const MainMenu = () => {
+  const isAboveMediumQuery = useMediaQuery(`(min-width:882px)`);
+
   return (
     <section className={styles.main_menu}>
-      <h1 className={styles.head}>Остальное меню</h1>
-      <div className={styles.body}>
-        <div className={styles.hotdog}>
-          {hotdogs.map((item) => (
-            <div className={styles.item} key={item.name}>
-              <h1>{item.name}</h1>
-              <div>
-                <span className={styles.components}>
-                  {item.components}{" "}
-                  <span className={styles.mass}>{item.mass}</span>
-                </span>
-                <p>{item.cost}</p>
-              </div>
+      {isAboveMediumQuery ? (
+        <>
+          <h1 className={styles.head}>Остальное меню</h1>
+          <div className={styles.body}>
+            <div className={styles.box}>
+              <HotDogMenu />
+              <KesMenu />
+              <OtherMenu />
             </div>
-          ))}
-        </div>
-        <div className={styles.burger}>
-          {burgers.map((item) => (
-            <div className={styles.item} key={item.name}>
-              <h1>{item.name}</h1>
-              <div>
-                <span className={styles.components}>
-                  {item.components}{" "}
-                  <span className={styles.mass}>{item.mass}</span>
-                </span>
-                <p>{item.cost}</p>
-              </div>
+            <div className={styles.box}>
+              <BurgerMenu />
+              <SnacksMenu />
             </div>
-          ))}
-        </div>
-        <div className={styles.snacks}>
-          {snacks.map((item) => (
-            <div className={styles.item} key={item.name}>
-              <h1>{item.name}</h1>
-              <div>
-                <span className={styles.components}>
-                  {item.components}{" "}
-                  <span className={styles.mass}>{item.mass}</span>
-                </span>
-
-                <p>{item.cost}</p>
-              </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <h1 className={styles.head}>Остальное меню</h1>
+          <div className={styles.body}>
+            <div className={styles.box}>
+              <HotDogMenu />
+              <BurgerMenu />
             </div>
-          ))}
-        </div>
-      </div>
-      <div></div>
+            <div className={styles.box}>
+              <SnacksMenu />
+              <KesMenu />
+              <OtherMenu />
+            </div>
+          </div>
+        </>
+      )}
     </section>
   );
 };

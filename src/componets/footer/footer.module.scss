@@ -1,19 +1,19 @@
 footer {
-  @apply bg-gray p-4 md:p-10;
+  @apply overflow-hidden bg-gray p-4 md:p-10;
   .about {
-    @apply m-auto  w-1/2 items-center justify-between text-xs md:float-none md:flex md:w-11/12;
+    @apply flex  w-1/2 flex-col justify-between text-sm md:float-none md:m-auto md:w-full md:flex-row md:items-center;
     .address {
-      @apply pb-8 text-white md:w-1/4 md:pb-0 md:text-lg lg:text-3xl;
+      @apply text-white md:w-1/3 md:text-lg lg:text-3xl;
     }
     .time {
-      @apply text-white md:w-1/4  md:text-right md:text-xl lg:text-3xl;
+      @apply text-white md:w-1/3  md:text-right md:text-xl lg:text-3xl;
     }
   }
   img {
     @apply m-auto w-1/2 md:w-1/4;
   }
   .soc {
-    @apply m-auto w-1/2 items-center justify-between text-right text-xs text-white md:flex md:w-11/12 md:text-left md:text-lg lg:text-2xl;
+    @apply m-auto w-1/2 items-center justify-between text-right text-sm text-white md:flex md:w-full md:text-left md:text-lg lg:text-2xl;
     .tt {
       @apply md:text-right;
     }

@@ -19,8 +19,28 @@ const MenuHero = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
+        slidesPerView="auto"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          476: {
+            slidesPerView: 1.5,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          786: {
+            slidesPerView: 2.5,
+          },
+          967: {
+            slidesPerView: 3,
+          },
+          1440: {
+            slidesPerView: 3.5,
+          },
+        }}
         spaceBetween={50}
-        slidesPerView={3}
         pagination={{ clickable: true }}
       >
         {swiperData.map((item) => (

@@ -1,0 +1,80 @@
+[
+  {
+    "h": "Ликеры",
+    "volume": "50мл",
+    "items": [
+      {
+        "name": "Antica Sambuca",
+        "cost": "9.50"
+      },
+      {
+        "name": "Campari",
+        "cost": "8.50"
+      },
+      {
+        "name": "Becherovka",
+        "cost": "8.50"
+      },
+      {
+        "name": "Sambuca Santa Lucia",
+        "cost": "5.00"
+      },
+      {
+        "name": "Herald Meister",
+        "cost": "5.00"
+      }
+    ]
+  },
+  {
+    "h": "Ром",
+    "volume": "50мл",
+    "items": [
+      {
+        "name": "Havana Club Anejo Espesials",
+        "cost": "8.00"
+      },
+      {
+        "name": "Havana Club Anejo 3 Anos",
+        "cost": "7.50"
+      },
+      {
+        "name": "Bacardi Spised",
+        "cost": "7.50"
+      },
+      {
+        "name": "Pirate bay White",
+        "cost": "5.00"
+      }
+    ]
+  },
+  {
+    "h": "Виски",
+    "volume": "50мл",
+    "items": [
+      {
+        "name": "The Glenlivet 1824",
+        "cost": "17.50"
+      },
+      {
+        "name": "Ghivas Regal 12 y.o.",
+        "cost": "17.00"
+      },
+      {
+        "name": "Jack Daniel`s",
+        "cost": "15.00"
+      },
+      {
+        "name": "Jameson 3 y.o.",
+        "cost": "11.00"
+      },
+      {
+        "name": "Jim Beam",
+        "cost": "9.50"
+      },
+      {
+        "name": "Four Roses",
+        "cost": "9.50"
+      }
+    ]
+  }
+]

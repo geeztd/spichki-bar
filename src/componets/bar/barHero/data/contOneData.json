@@ -1,0 +1,72 @@
+[
+  {
+    "h": "Коньяк, Бренди",
+    "volume": "50мл",
+    "items": [
+      {
+        "name": "Martell VS",
+        "cost": "19.00"
+      },
+      {
+        "name": "Арарат Ани, 7 лет",
+        "cost": "11.50"
+      },
+      {
+        "name": "Torres 10",
+        "cost": "10.00"
+      },
+      {
+        "name": "Napoleon VSOP",
+        "cost": "7.50"
+      }
+    ]
+  },
+  {
+    "h": "Портвейн",
+    "volume": "50мл",
+    "name": "Sandeman Ruby/Tawky",
+    "cost": "8.50"
+  },
+  {
+    "h": "Водка",
+    "volume": "50мл",
+    "items": [
+      {
+        "name": "Finlandia",
+        "cost": "9.00"
+      },
+      {
+        "name": "Finlandia Cranberry",
+        "cost": "9.00"
+      },
+      {
+        "name": "Сябры люкс",
+        "cost": "4.00"
+      }
+    ]
+  },
+  {
+    "h": "Текила",
+    "volume": "50мл",
+    "name": "Olmeca Tequlla Blance/Gold",
+    "cost": "11.00"
+  },
+  {
+    "h": "Джин",
+    "volume": "50мл",
+    "items": [
+      {
+        "name": "Bombay Sapphire",
+        "cost": "11.00"
+      },
+      {
+        "name": "Beefeater",
+        "cost": "8.50"
+      },
+      {
+        "name": "Gintellman",
+        "cost": "5.00"
+      }
+    ]
+  }
+]

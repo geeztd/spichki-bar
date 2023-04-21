@@ -1,0 +1,68 @@
+.bar_main {
+  @apply flex justify-between gap-8 bg-lightBrown px-2 py-3;
+  .container {
+    @apply flex w-full flex-col justify-between;
+    .box {
+      h2 {
+        @apply flex justify-between border-b border-slate-500 text-base sm:text-xl lg:text-2xl;
+      }
+      .item {
+        @apply flex justify-between text-xs sm:text-lg lg:text-xl;
+      }
+    }
+  }
+  .rig {
+    @apply w-2/5;
+  }
+  .right {
+    @apply w-1/2;
+  }
+  .coctails,
+  .spritz_coctails {
+    h2 {
+      @apply border-b border-slate-500 text-base sm:text-xl lg:text-2xl;
+    }
+    .item {
+      .head {
+        @apply flex justify-between text-xs sm:text-lg lg:text-xl;
+      }
+      .struct {
+        @apply text-xs opacity-60 sm:text-lg lg:text-xl;
+      }
+    }
+  }
+  .coctails {
+    @apply w-1/2 md:w-3/5;
+  }
+  .spritz_coctails {
+  }
+  .beer {
+    @apply w-1/2 md:w-full;
+    h2 {
+      @apply flex justify-between border-b border-slate-500 text-sm sm:text-xl lg:text-2xl;
+    }
+    .box {
+      @apply text-xs sm:text-lg lg:text-xl;
+      .item {
+        @apply flex justify-between;
+      }
+      .struct {
+        @apply opacity-70;
+      }
+    }
+  }
+  .aperetifs {
+    @apply w-1/2 md:w-full;
+    h2 {
+      @apply border-b border-slate-500 text-sm sm:text-xl lg:text-2xl;
+    }
+    .item {
+      .head {
+        @apply flex justify-between text-xs sm:text-lg lg:text-xl;
+      }
+      .struct {
+        @apply text-xs opacity-60 sm:text-lg lg:text-xl;
+      }
+    }
+  }
+}

@@ -6,5 +6,5 @@
   box-sizing: border-box;
 }
 .app {
-  @apply container;
+  @apply container overflow-x-hidden;
 }
