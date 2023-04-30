@@ -1,22 +1,23 @@
 import React from "react";
+import { motion } from "framer-motion";
+import MonAndTwo from "./parts/MonAndTwo";
+import WenAndTheth from "./parts/WenAndTheth";
+import FriAndSun from "./parts/FriAndSun";
+import Suturday from "./parts/Suturday";
 import styles from "./discounts.module.scss";
 
 const Discounts = () => {
   return (
     <>
-      <h1 className={styles.head}>АКЦИИ НА КАЖДЫЙ ДЕНЬ</h1>
-      <section className={styles.mon_and_two}>
-        <div className={styles.mon}>Понедельник</div>
-        <div>
-          <img src="" alt="" />
-          <div className={styles.other}>
-            <div className={styles.and}>&</div>
-            <div className={styles.two}>Вторник</div>
-            <div className={styles.seils}>-20%</div>
-          </div>
-        </div>
-        <div className={styles.name}>На все меню</div>
-      </section>
+      <div className={styles.head}>
+        <motion.h1 initial={{ right: 300 }} whileInView={{ right: 0 }}>
+          АКЦИИ НА КАЖДЫЙ ДЕНЬ
+        </motion.h1>
+      </div>
+      <MonAndTwo />
+      <WenAndTheth />
+      <FriAndSun />
+      <Suturday />
     </>
   );
 };

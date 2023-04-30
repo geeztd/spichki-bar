@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { headerData } from "./headerData";
+import {
+  burgAnimateTop,
+  menuAnimate,
+  burgAnimateMidle,
+  burgAnimateButtom,
+  burgAnimate,
+} from "./animate";
 import styles from "./header.module.scss";
 
 const Header = () => {
@@ -25,28 +32,58 @@ const Header = () => {
       </ul>
       <div className={styles.mobile_header}>
         <img src="image/logo.svg" alt="logo" />
-        <div
+        <motion.div
+          initial="hidden"
+          animate={burger ? "open" : "close"}
+          variants={burgAnimate}
           className={styles.burger}
           onClick={(e) => {
+            !burger
+              ? (document.body.style.overflow = `hidden`)
+              : (document.body.style.overflow = `visible`);
+
             setBurger(!burger);
           }}
         >
-          <span className={styles.one}></span>
-          <span className={styles.two}></span>
-          <span className={styles.three}></span>
-        </div>
+          <motion.span
+            initial="hidden"
+            animate={burger ? "open" : "close"}
+            variants={burgAnimateTop}
+            className={styles.one}
+          ></motion.span>
+          <motion.span
+            initial="hidden"
+            animate={burger ? "open" : "close"}
+            variants={burgAnimateMidle}
+            className={styles.two}
+          ></motion.span>
+          <motion.span
+            initial="hidden"
+            animate={burger ? "open" : "close"}
+            variants={burgAnimateButtom}
+            className={styles.three}
+          ></motion.span>
+        </motion.div>
       </div>
-      <ul
+      <motion.ul
+        initial="hidden"
+        animate={burger ? "open" : "close"}
+        variants={menuAnimate}
         className={`${styles.mobile_nav} ${
           burger ? styles.active : styles.hid
         }`}
       >
-        {headerData.map((item) => (
-          <li key={item.name}>
+        {headerData.map((item, i) => (
+          <motion.li
+            key={item.name}
+            initial={{ x: 1000 }}
+            whileInView={{ x: 0 }}
+            transition={{ delay: i * 0.1 }}
+          >
             <a href={item.link}>{item.name}</a>
-          </li>
+          </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </header>
   );
 };

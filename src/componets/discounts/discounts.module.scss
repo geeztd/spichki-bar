@@ -1,0 +1,97 @@
+.head {
+  @apply flex items-center justify-center bg-lightBrown text-center text-3xl text-white md:h-20 md:text-4xl xmd:text-6xl;
+  h1 {
+    @apply relative;
+  }
+}
+.mon_and_two {
+  @apply overflow-x-hidden bg-lightBrown;
+
+  .other {
+    @apply relative mx-auto flex flex-col text-3xl md:text-5xl xmd:text-7xl;
+    .img {
+      @apply absolute -left-5 top-14 w-32 rotate-6 rounded-lg md:w-60 xmd:top-32 xmd:w-80;
+      img {
+        @apply rounded-3xl;
+      }
+    }
+    .name_days {
+      @apply relative;
+      .and,
+      .two {
+        @apply relative;
+      }
+      .mon {
+        @apply relative text-right;
+      }
+    }
+    .seils {
+      @apply self-center text-5xl text-red-600 md:text-7xl xmd:text-9xl;
+    }
+  }
+  .name {
+    @apply text-center text-3xl md:text-5xl xmd:text-7xl;
+  }
+}
+.wen_thert {
+  @apply overflow-x-hidden bg-lightBrown pb-10;
+  .names {
+    @apply flex justify-around text-3xl md:text-5xl xmd:text-7xl;
+    .wen {
+      @apply text-right;
+    }
+  }
+  .seil {
+    @apply flex items-center justify-between pt-3;
+    .left,
+    .right {
+      @apply w-32 rounded-3xl md:w-60 xmd:w-80;
+    }
+    .left {
+      @apply rotate-6;
+    }
+    .right {
+      @apply -rotate-6;
+    }
+    h1 {
+      @apply text-5xl text-red-600 md:text-8xl;
+    }
+  }
+  img {
+    @apply pt-3;
+  }
+}
+
+.fri_sun {
+  @apply overflow-x-hidden bg-lightBrown;
+  .names {
+    @apply relative text-3xl md:text-5xl xmd:text-7xl;
+    .fri {
+      @apply relative right-[52%] text-right;
+    }
+    .and {
+      @apply text-center;
+    }
+    .sun {
+      @apply relative left-[52%];
+    }
+  }
+  .other {
+    @apply flex justify-around py-5 text-4xl md:text-7xl xmd:text-8xl;
+    .seil {
+      @apply text-red-600;
+    }
+  }
+}
+.sut {
+  @apply relative overflow-x-hidden bg-lightBrown pb-4 text-3xl md:text-6xl xmd:text-7xl;
+  .seil {
+    @apply text-center text-4xl text-red-600 md:text-7xl xmd:text-9xl;
+  }
+  .left {
+    @apply relative right-[50%] text-right;
+  }
+  .right {
+    @apply relative left-[50%];
+  }
+}
